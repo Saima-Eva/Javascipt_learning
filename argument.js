@@ -10,9 +10,9 @@ add(500, 700)
 */
 
 
-var arr1 = [1, 2, 3]
-var arr2 = [5, 7, 9, 10]
-var arr3 = [9, 7, 1, 5, 7]
+// var arr1 = [1, 2, 3]
+// var arr2 = [5, 7, 9, 10]
+// var arr3 = [9, 7, 1, 5, 7]
 
 // var sum1 = 0
 // for ( var i = 0; i < arr1.length; i++){
@@ -35,15 +35,39 @@ var arr3 = [9, 7, 1, 5, 7]
 // console.log(sum3)
 
 
-function sumOfArray(arr){
-var sum = 0
- for ( var i = 0; i < arr.length; i++){
-     sum += arr[i]
+// function sumOfArray(arr){
+// var sum = 0
+//  for ( var i = 0; i < arr.length; i++){
+//      sum += arr[i]
+// }
+//  console.log(sum)
+
+// }
+
+// sumOfArray(arr1)
+// sumOfArray(arr2)
+// sumOfArray(arr3)
+
+
+
+function test(a,b,c){
+    // console.log(arguments)
+    for(var i = 0; i < arguments.length; i++)
+    console.log(arguments[i])
 }
- console.log(sum)
+//test()
+test(10,20,30)
+
+
+
+function addAll(){
+    var sum = 0
+    for(var i = 0; i < arguments.length; i++){
+    console.log(arguments[i])
+}
+console.log(sum)
 
 }
 
-sumOfArray(arr1)
-sumOfArray(arr2)
-sumOfArray(arr3)
+addAll(1,2,3)
+addAll(1,2,3,4,5,6,7,8,9,10)
